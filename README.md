@@ -149,7 +149,10 @@ built-in `AlertDialog` and automatically marks it as seen.
 await WhatsNew.showIfNeeded(context);
 ```
 
-![Built-in UI](https://raw.githubusercontent.com/Fahrendrakhoirul/whats_new_kit/main/screenshots/built_in_ui.png)
+<img
+  src="https://raw.githubusercontent.com/FahrendraKhoirul/whats_new_kit/main/screenshots/built_in_ui.png"
+  width="280"
+/>
 
 ### Custom UI
 
@@ -167,7 +170,10 @@ if (release != null) {
 }
 ```
 
-![Custom UI](https://raw.githubusercontent.com/Fahrendrakhoirul/whats_new_kit/main/screenshots/custom_ui.webp)
+<img
+  src="https://raw.githubusercontent.com/Fahrendrakhoirul/whats_new_kit/main/screenshots/custom_ui.webp"
+  width="280"
+/>
 
 ### Debug mode
 
