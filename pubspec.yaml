@@ -1,7 +1,8 @@
 name: flutter_whats_new
-description: "A new Flutter package project."
+description: "A simple Flutter package to show what's new releases in your app."
 version: 0.0.1
-homepage:
+homepage: https://github.com/FahrendraKhoirul/flutter_whats_new
+repository: https://github.com/FahrendraKhoirul/flutter_whats_new
 
 environment:
   sdk: ^3.12.2
