@@ -1,8 +1,8 @@
-# flutter_whats_new
+# whats_new_kit
 
 A simple Flutter package to show "What's New" releases in your app.
 
-`flutter_whats_new` lets you define a list of releases once, and it automatically
+`whats_new_kit` lets you define a list of releases once, and it automatically
 tracks which release the user has already seen using `SharedPreferences`. It
 ships with a built-in `AlertDialog`, but you can also build your own UI with a
 single call to get the latest unseen release.
@@ -18,24 +18,24 @@ single call to get the latest unseen release.
 
 ## Installation
 
-Add `flutter_whats_new` to your `pubspec.yaml`:
+Add `whats_new_kit` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flutter_whats_new: ^0.0.1
+  whats_new_kit: ^0.0.1
 ```
 
 Or install it with:
 
 ```bash
-flutter pub add flutter_whats_new
+flutter pub add whats_new_kit
 ```
 
 ## Quick Start
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:flutter_whats_new/flutter_whats_new.dart';
+import 'package:whats_new_kit/whats_new_kit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -149,7 +149,7 @@ built-in `AlertDialog` and automatically marks it as seen.
 await WhatsNew.showIfNeeded(context);
 ```
 
-![Built-in UI](screenshot/built_in_ui.png)
+![Built-in UI](https://raw.githubusercontent.com/Fahrendrakhoirul/whats_new_kit/main/screenshots/built_in_ui.png)
 
 ### Custom UI
 
@@ -167,7 +167,7 @@ if (release != null) {
 }
 ```
 
-![Custom UI](screenshot/custom_ui.webp)
+![Custom UI](https://raw.githubusercontent.com/Fahrendrakhoirul/whats_new_kit/main/screenshots/custom_ui.webp)
 
 ### Debug mode
 
@@ -242,7 +242,7 @@ already seen.
 
 This package started from a simple problem: how can Flutter apps show users what's new after an update?
 
-I wrote about the idea, the problems I encountered, and the decisions behind building `flutter_whats_new` in this Medium article:
+I wrote about the idea, the problems I encountered, and the decisions behind building `whats_new_kit` in this Medium article:
 
 👉 [I Built a “What’s New” System for Flutter + Shorebird](https://medium.com/@fahrendra.khoirul/i-built-a-whats-new-system-for-flutter-shorebird-d5aeaea7304d)
 
@@ -254,7 +254,7 @@ Things like more UI variants, customization options, animations, and styling are
 
 If you have an idea, improvement, or bug fix, contributions are very welcome. Feel free to open an issue or submit a pull request.
 
-Let's make `flutter_whats_new` better together.
+Let's make `whats_new_kit` better together.
 
 ## License
 
