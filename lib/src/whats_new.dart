@@ -35,22 +35,39 @@ class WhatsNew {
     return _releases.sublist(0, index);
   }
 
-  static Future<void> showIfNeeded(BuildContext context) async {
+  /// Returns the latest release the user hasn't seen yet, without marking it
+  /// as seen. Returns `null` when there is nothing to show.
+  ///
+  /// Use this for a custom UI. When the developer is done showing the release,
+  /// call [markAsSeen] explicitly.
+  static Future<WhatsNewRelease?> getLatestUnseenRelease() async {
     final lastSeenId = await _storage.getLastSeenId();
-
-    if (!context.mounted) {
-      return;
-    }
 
     final newReleases = newerThan(lastSeenId);
 
     if (newReleases.isEmpty && !_debugMode) {
+      return null;
+    }
+
+    return newReleases.isNotEmpty ? newReleases.first : _releases.first;
+  }
+
+  /// Marks the release with [id] as seen, so it won't be shown again.
+  /// No-op in debug mode.
+  static Future<void> markAsSeen(String id) async {
+    if (_debugMode) {
       return;
     }
 
-    final release = newReleases.isNotEmpty
-        ? newReleases.first
-        : _releases.first;
+    await _storage.saveLastSeenId(id);
+  }
+
+  static Future<void> showIfNeeded(BuildContext context) async {
+    final release = await getLatestUnseenRelease();
+
+    if (!context.mounted || release == null) {
+      return;
+    }
 
     await showDialog(
       context: context,
@@ -59,8 +76,6 @@ class WhatsNew {
       },
     );
 
-    if (!_debugMode) {
-      await _storage.saveLastSeenId(release.id);
-    }
+    await markAsSeen(release.id);
   }
 }
