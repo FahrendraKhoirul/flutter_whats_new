@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_whats_new/src/models/whats_new_item.dart';
-import 'package:flutter_whats_new/src/models/whats_new_release.dart';
+import 'package:whats_new_kit/src/models/whats_new_item.dart';
+import 'package:whats_new_kit/src/models/whats_new_release.dart';
 
 /// Visual identity (label, icon, color) for each [WhatsNewItemType].
 class _WhatsNewItemTypeStyle {

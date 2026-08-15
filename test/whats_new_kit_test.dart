@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:flutter_whats_new/flutter_whats_new.dart';
+import 'package:whats_new_kit/whats_new_kit.dart';
 
 const releases = [
   WhatsNewRelease(

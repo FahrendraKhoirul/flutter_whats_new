@@ -1,8 +1,8 @@
-name: flutter_whats_new
+name: whats_new_kit
 description: "A simple Flutter package to show what's new releases in your app."
 version: 0.0.1
-homepage: https://github.com/FahrendraKhoirul/flutter_whats_new
-repository: https://github.com/FahrendraKhoirul/flutter_whats_new
+homepage: https://github.com/FahrendraKhoirul/whats_new_kit
+repository: https://github.com/FahrendraKhoirul/whats_new_kit
 
 environment:
   sdk: ^3.12.2

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_whats_new/src/models/whats_new_release.dart';
-import 'package:flutter_whats_new/src/storage/whats_new_storage.dart';
-import 'package:flutter_whats_new/src/widgets/whats_new_dialog.dart';
+import 'package:whats_new_kit/src/models/whats_new_release.dart';
+import 'package:whats_new_kit/src/storage/whats_new_storage.dart';
+import 'package:whats_new_kit/src/widgets/whats_new_dialog.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class WhatsNew {

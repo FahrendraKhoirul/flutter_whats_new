@@ -1,4 +1,4 @@
-import 'package:flutter_whats_new/src/models/whats_new_item.dart';
+import 'package:whats_new_kit/src/models/whats_new_item.dart';
 
 class WhatsNewRelease {
   final String id;

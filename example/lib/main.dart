@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_whats_new/flutter_whats_new.dart';
+import 'package:whats_new_kit/whats_new_kit.dart';
 
 final releases = [
   WhatsNewRelease(
