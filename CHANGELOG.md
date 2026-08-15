@@ -1,3 +1,7 @@
+## 0.0.4
+
+- Updated package metadata and documentation.
+
 ## 0.0.3
 
 - Minor release to refresh package metadata.
