@@ -1,3 +1,13 @@
+## 0.0.3
+
+- Minor release to refresh package metadata.
+- No API or behavior changes.
+
+## 0.0.2
+
+- Renamed package from `flutter_whats_new` to `whats_new_kit`.
+- Fixed README image sizing and updated documentation and screenshots.
+
 ## 0.0.1
 
 - Initial release.
