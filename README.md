@@ -149,6 +149,8 @@ built-in `AlertDialog` and automatically marks it as seen.
 await WhatsNew.showIfNeeded(context);
 ```
 
+![Built-in UI](screenshot/built_in_ui.png)
+
 ### Custom UI
 
 If you want to control the UI yourself, get the latest unseen release and mark
@@ -164,6 +166,8 @@ if (release != null) {
   await WhatsNew.markAsSeen(release.id);
 }
 ```
+
+![Custom UI](screenshot/custom_ui.webp)
 
 ### Debug mode
 
@@ -232,6 +236,25 @@ already seen.
 6. After displaying your custom UI, call `markAsSeen(release.id)`.
 7. `debugMode: true` makes the latest release always available and prevents
    `markAsSeen()` from persisting.
+
+
+## The Journey 
+
+This package started from a simple problem: how can Flutter apps show users what's new after an update?
+
+I wrote about the idea, the problems I encountered, and the decisions behind building `flutter_whats_new` in this Medium article:
+
+👉 [I Built a “What’s New” System for Flutter + Shorebird](https://medium.com/@fahrendra.khoirul/i-built-a-whats-new-system-for-flutter-shorebird-d5aeaea7304d)
+
+## Contributing
+
+This package is still in its early stage, and there is a lot that can be improved.
+
+Things like more UI variants, customization options, animations, and styling are still open for exploration.
+
+If you have an idea, improvement, or bug fix, contributions are very welcome. Feel free to open an issue or submit a pull request.
+
+Let's make `flutter_whats_new` better together.
 
 ## License
 
