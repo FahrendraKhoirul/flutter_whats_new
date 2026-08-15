@@ -5,7 +5,7 @@ final releases = [
   WhatsNewRelease(
     id: 'v2',
     version: '1.1.0',
-    title: 'What’s New',
+    title: 'Hello 1',
     items: [WhatsNewItem(WhatsNewItemType.added, 'Added a new feature.')],
   ),
   WhatsNewRelease(
@@ -19,7 +19,7 @@ final releases = [
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await WhatsNew.initialize(releases: releases);
+  await WhatsNew.initialize(releases: releases, debugMode: true);
 
   runApp(const MyApp());
 }
