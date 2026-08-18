@@ -1,3 +1,8 @@
+## 0.0.5
+
+- Lowered the Dart SDK constraint to `^3.5.0` and relaxed `shared_preferences` to `^2.5.3` for wider compatibility.
+- No API or behavior changes.
+
 ## 0.0.4
 
 - Updated package metadata and documentation.

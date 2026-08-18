@@ -1,18 +1,18 @@
 name: whats_new_kit
 description: "A simple Flutter package to show what's new releases in your app."
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/FahrendraKhoirul/whats_new_kit
 repository: https://github.com/FahrendraKhoirul/whats_new_kit
 
 environment:
-  sdk: ^3.12.2
+  sdk: ^3.5.0
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  shared_preferences: ^2.5.5
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_test:
